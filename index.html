@@ -1,20 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Focus | Home</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">s
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="css/bootstrap-config.css">
+    <link rel="stylesheet" href="css/bootstrap-config.css">
+    <link rel="stylesheet" href="css/theme.css">
 </head>
+
 <body>
-    <div class="row">
-        <div class="col">1</div>
-        <div class="col">1</div>
-        <div class="col">1</div>
-        <div class="col">1</div>
+    <div class="top_social_links">
+        <ul class="social_links">
+            <li><a href="#"><img src="/images/icons/Vector.svg" alt=""></a></li>
+            <li><a href="#"><img src="/images/icons/icons8-twitter 1.svg" alt=""></a></li>
+            <li><a href="#"><img src="/images/icons/icons8-youtube 1.svg" alt=""></a></li>
+            <li><a href="#"><img src="/images/icons/icons8-linkedin-2 1.svg" alt=""></a></li>
+            <li><a href="#"><img src="/images/icons/icons8-instagram 1.svg" alt=""></a></li>
+        </ul>
     </div>
+    <header class="site_header">
+        <div class="container">
+            <nav class="navigation">
+                <a href="#" class="brand">
+                    <img src="images/logo.svg" alt="">
+                    <img class="mobile_logo" src="images/logo_mobile.svg" alt="">
+                </a>
+                <button class="toggle primaryToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="primary_menu">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Where We Are</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <ul class="social_links">
+                    <li><a href="#"><img src="/images/icons/Vector.svg" alt=""></a></li>
+                    <li><a href="#"><img src="/images/icons/icons8-twitter 1.svg" alt=""></a></li>
+                    <li><a href="#"><img src="/images/icons/icons8-youtube 1.svg" alt=""></a></li>
+                    <li><a href="#"><img src="/images/icons/icons8-linkedin-2 1.svg" alt=""></a></li>
+                    <li><a href="#"><img src="/images/icons/icons8-instagram 1.svg" alt=""></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero_innerwrap">
+                <img class="hero_logo" src="images/hero_logo.svg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed congue turpis. Proin vestibulum
+                    ac tortor ac commodo. </p>
+                <a href="" class="btn btn-lg">Free Lease Analysis</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        body = document.querySelector('body');
+
+        siteheader = document.querySelector('.site_header');
+        navBtn = siteheader.querySelector('.primaryToggle');
+        primaryMenu = siteheader.querySelector('.primary_menu');
+        navBtn.addEventListener('click',  ()=> {
+            navBtn.classList.toggle("active")
+            body.classList.toggle("primary_menu_open")
+        })
+        siteheader.addEventListener("click",  ()=> {
+            navBtn.classList.remove("active")
+            body.classList.remove("primary_menu_open")
+        })
+
+        function stopProp(element) {
+            element.addEventListener("click",  (event) => {
+                event.stopPropagation();
+            })
+        };
+        stopProp(navBtn)
+        stopProp(primaryMenu)        
+    </script>
 </body>
+
 </html>
