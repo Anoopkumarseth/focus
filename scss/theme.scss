@@ -9,22 +9,29 @@
     --font-family: "Inter", sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
         "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-size: 1rem; //16px
-    --line-height:1.4;
+    --line-height: 1.4;
     --h1-size: 5rem; // 80px
     --h2-size: 34px;
     --h3-size: 20px;
 
+    --heading-color: var(--primary-color);
+    --line-height--heading: 1.2;
+
     --font-weight: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
-    --font-weight-bold: 600;
+    --font-weight-bold: 700;
+
+    --page-section-padding: 100px;
+    --page-compact-section-padding: 40px;
+    --heading-margin: 0 0 10px;
 }
 
 @import "common";
 @import "breakpoints";
 @import "typography";
 
-.top_social_links{
+.top_social_links {
     display: none;
 }
 .site_header {
@@ -39,7 +46,7 @@
     .brand img {
         max-width: 160px;
     }
-    .mobile_logo{
+    .mobile_logo {
         display: none;
     }
     .primary_menu {
@@ -69,7 +76,6 @@
             }
         }
     }
-    
 
     .navigation {
         display: flex;
@@ -77,17 +83,16 @@
         padding-block: 15px;
     }
 
-    &::after{
-        content: '';
+    &::after {
+        content: "";
         inset: 0;
         position: fixed;
         background: var(--primary-color);
         opacity: 0;
         visibility: hidden;
-        transition: all .3s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
 }
-
 
 .toggle {
     height: 29px;
@@ -230,5 +235,51 @@
     }
 }
 
+.fc_jumbotron {
+    .section_title {
+        margin-bottom: 20px;
+    }
+    img {
+        width: 100%;
+    }
+    .bg-element {
+        top: -113px;
+        left: -94px;
+        width: 200px !important;
+    }
+    .image_wrap{
+        padding-left: 35px;
+    }
+    .content_wrap{
+        padding-right: 60px;
+    }
+}
 
-@import 'common_responsive';
+
+.client_projects{
+    overflow: hidden;
+    img{
+        width: 100%;
+    }
+    .client_cards{
+        display: flex;
+        margin-inline: -5px;
+    }
+    .item{
+        width: 20%;
+        padding-inline: 5px;
+    }
+}
+
+// bg elements
+.has_bg_element {
+    position: relative;
+}
+
+.bg-element {
+    position: absolute;
+    max-width: 100%;
+    z-index: -1;
+}
+
+@import "common_responsive";

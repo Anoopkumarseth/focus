@@ -8,6 +8,9 @@ $include-column-box-sizing: true !default;
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/maps";
 
+
+
+
 @import "../node_modules/bootstrap/scss/mixins/lists";
 @import "../node_modules/bootstrap/scss/mixins/breakpoints";
 @import "../node_modules/bootstrap/scss/mixins/container";
@@ -59,6 +62,7 @@ $utilities: map-get-multiple(
     "padding-end",
     "padding-bottom",
     "padding-start",
+    "text-align"
   )
 );
 

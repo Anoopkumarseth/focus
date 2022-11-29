@@ -7,7 +7,7 @@ input,
 select,
 optgroup,
 textarea {
-	color: var(--content-color);
+	color: var(--text-color);
 	font-family: var(--font-family);
 	font-size: var(--font-size);
 	font-weight: var(--font-weight);
@@ -16,7 +16,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	margin: var(--heading-margin);
-	font-weight: var(--font-weight--bold);
+	font-weight: var(--font-weight-bold);
 	color: var(--heading-color);
 	line-height:var(--line-height--heading);
 }
@@ -42,7 +42,7 @@ h6{
 p {
 	margin-top: 0;
 	&:not(:last-child){
-		margin-bottom: 15px;
+		margin-bottom: 25px;
 	}
 }
 
