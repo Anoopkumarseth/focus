@@ -46,4 +46,11 @@ img {
 }
 .section_header{
     margin-bottom: 40px;
+    .lead{
+        font-size: 0.875rem;
+        color: var(--primary-color);
+    }
+    .section_title{
+        text-transform: uppercase;
+    }
 }
