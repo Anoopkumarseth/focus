@@ -52,5 +52,8 @@ img {
     }
     .section_title{
         text-transform: uppercase;
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
 }

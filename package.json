@@ -1,12 +1,12 @@
 {
   "dependencies": {
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "swiper": "^8.4.5"
   },
   "name": "focus",
   "version": "1.0.0",
   "description": "focus responsive html",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
