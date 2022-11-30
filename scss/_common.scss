@@ -40,15 +40,19 @@ img {
 
 .page-section{
     padding-block: var(--page-section-padding);
+    overflow-x: hidden;
 }
 .page-compact-section{
     padding-block: var(--page-compact-section-padding);
+    overflow-x: hidden;
 }
 .section_header{
     margin-bottom: 40px;
     .lead{
         font-size: 0.875rem;
         color: var(--primary-color);
+        max-width: 555px;
+        margin-inline: auto;
     }
     .section_title{
         text-transform: uppercase;
