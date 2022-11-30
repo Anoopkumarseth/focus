@@ -7,12 +7,14 @@
 @include down-lg {
     .site_header {
         background: var(--light-color);
+        padding-inline: 8px;
         .navigation {
             flex-wrap: wrap;
             .social_links {
                 display: none;
             }
         }
+        
         .brand {
             img {
                 display: none;
@@ -88,8 +90,14 @@
     :root {
         --page-section-padding: 60px;
     }
+    .top_social_links{
+        padding: 8px;
+    }
+    .page-section, .page-compact-section{
+        padding-inline: 8px;
+    }
     .section_header {
-        margin-bottom: 30px;
+        margin-bottom: 30px;        
     }
     .testimonial .testimonial_wrapper {
         padding: 53px 36px;
@@ -105,6 +113,9 @@
         }
         .btn {
             margin-top: 5px;
+        }
+        .btn-lg {
+            padding: 15px 15px;
         }
     }
 
@@ -150,7 +161,7 @@
         left: 55px;
     }
     .blog_cards {
-        padding: 60px 0;
+        padding: 60px 8px;
         .col-md-4:not(:only-of-type) {
             margin-bottom: 20px;
         }
@@ -199,5 +210,32 @@
             max-width: 240px;
             margin-inline: auto;
         }
+    }
+
+    .section_title{
+        font-size: 30px;
+    }
+    .fc_jumbotron .section_title {
+        margin-bottom: 15px;
+    }
+
+    .client_projects .section_title{
+        margin-bottom: 48px;
+    }
+
+    .blog_cards .card figcaption {
+        padding: 24px 24px 34px;
+    }
+
+    .social_links a{
+        height: 19px !important;
+        width: 19px !important;
+        img{
+            height: 9px !important;
+            width: 9px !important;
+        }
+    }
+    .testimonial .testimonial_wrapper .swiper-button-next:after, .testimonial .testimonial_wrapper .swiper-button-prev:after{
+        font-size: 14px;
     }
 }
