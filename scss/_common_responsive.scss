@@ -87,4 +87,101 @@
     }
 }
 
+@include down-md{
+    :root{
+        --page-section-padding: 60px;
+    }
+    .section_header{
+        margin-bottom: 30px;
+    }
+    .testimonial .testimonial_wrapper{
+        padding: 53px 36px;
+    }
+    .hero{
+        padding-block: 80px;
+        .hero_logo{
+            max-width: 212px;
+            margin-bottom: 40px;
+        }
+        p{
+            font-size: 1.125rem;
+        }
+        .btn{
+            margin-top: 5px;
+        }
+    }
+
+    .btn{
+        font-size: 0.875rem;
+    }
+
+    .client_projects .client_cards {
+        display: block;
+        text-align: center;
+        padding-inline: 50px;
+        .item{
+            width: 100%;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+    }
+    .office_card{
+        padding-right: 0;
+    }
+    .fc_jumbotron .image_wrap {
+        padding-left: 24px;
+    }
+    .fc_jumbotron .content_wrap{
+        padding-right: 24px;
+    }
+
+    .testimonial .testimonial_wrapper .nav_btn{
+        bottom: -20px;
+        margin: auto;
+        top: unset;
+        height: 39px;
+        width: 39px;
+    }
+    .testimonial .testimonial_wrapper .swiper-button-prev, .testimonial .testimonial_wrapper .swiper-rtl .swiper-button-next {
+        left: -55px;
+        right: 0;
+    }
+    .testimonial .testimonial_wrapper .swiper-button-next, .testimonial .testimonial_wrapper .swiper-rtl .swiper-button-prev {
+        right: 0;
+        left: 55px;
+    }
+    .blog_cards {
+        padding: 60px 0;
+        .col-md-4:not(:only-of-type){
+            margin-bottom: 20px;
+        }
+        .mt-40 {
+            margin-top: 20px;
+        }
+    }
+    .contact_form_outer{
+        padding-top: 0;
+        background-size: 60%;
+    }
+    .office_card img{
+        margin-bottom: 20px;
+    }
+
+    .contact_form{
+        margin-top: 109px;
+        padding: 34px 26px;
+        .submit_btn{
+            width: 100%;
+        }
+    }
+
+    .site_footer ul.contact_list {
+        margin: 0 auto;
+        display: block;
+        width: max-content;
+    }
+    
+}
+
+
 

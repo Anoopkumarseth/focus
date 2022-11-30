@@ -194,6 +194,7 @@
     p {
         color: var(--light-color);
         font-size: 1.25rem;
+        margin-bottom: 15px;
     }
     &::after {
         content: "";
@@ -295,7 +296,7 @@
             }
         }
     }
-    
+
 }
 
 .blog_cards {
@@ -448,6 +449,7 @@
         font-size: 1.625rem;
         text-transform: uppercase;
         margin-bottom: 20px;
+        color: #000;
     }
 }
 
