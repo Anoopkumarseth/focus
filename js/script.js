@@ -12,6 +12,17 @@ siteheader.addEventListener("click", () => {
     body.classList.remove("primary_menu_open")
 })
 
+// close nav on swipe left
+document.addEventListener('swiped-left', function(e) {
+    navBtn.classList.remove("active")
+    body.classList.remove("primary_menu_open")
+});
+// open nav on swipe right
+document.addEventListener('swiped-right', function(e) {
+    navBtn.classList.add("active")
+    body.classList.add("primary_menu_open")
+});
+
 function stopProp(element) {
     element.addEventListener("click", (event) => {
         event.stopPropagation();
@@ -28,3 +39,6 @@ var swiper = new Swiper(".testimonial_swiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+
+

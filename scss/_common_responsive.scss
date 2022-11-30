@@ -14,7 +14,7 @@
                 display: none;
             }
         }
-        
+
         .brand {
             img {
                 display: none;
@@ -45,7 +45,8 @@
             display: block;
             width: 100%;
             max-width: 260px;
-            transition: all ease-in-out 0.3s;
+            -webkit-transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+            transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
             transform: translateX(-110%);
             left: 0;
             top: 0;
@@ -90,14 +91,15 @@
     :root {
         --page-section-padding: 60px;
     }
-    .top_social_links{
+    .top_social_links {
         padding: 8px;
     }
-    .page-section, .page-compact-section{
+    .page-section,
+    .page-compact-section {
         padding-inline: 8px;
     }
     .section_header {
-        margin-bottom: 30px;        
+        margin-bottom: 30px;
     }
     .testimonial .testimonial_wrapper {
         padding: 53px 36px;
@@ -213,14 +215,14 @@
         }
     }
 
-    .section_title{
+    .section_title {
         font-size: 30px;
     }
     .fc_jumbotron .section_title {
         margin-bottom: 15px;
     }
 
-    .client_projects .section_title{
+    .client_projects .section_title {
         margin-bottom: 48px;
     }
 
@@ -228,15 +230,16 @@
         padding: 24px 24px 34px;
     }
 
-    .social_links a{
+    .social_links a {
         height: 19px !important;
         width: 19px !important;
-        img{
+        img {
             height: 9px !important;
             width: 9px !important;
         }
     }
-    .testimonial .testimonial_wrapper .swiper-button-next:after, .testimonial .testimonial_wrapper .swiper-button-prev:after{
+    .testimonial .testimonial_wrapper .swiper-button-next:after,
+    .testimonial .testimonial_wrapper .swiper-button-prev:after {
         font-size: 14px;
     }
 }
