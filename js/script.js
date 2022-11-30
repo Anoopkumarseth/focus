@@ -3,6 +3,8 @@ body = document.querySelector('body');
 siteheader = document.querySelector('.site_header');
 navBtn = siteheader.querySelector('.primaryToggle');
 primaryMenu = siteheader.querySelector('.primary_menu');
+tesimonialWrap = document.querySelector('.testimonial_wrapper .swiper-wrapper')
+
 navBtn.addEventListener('click', () => {
     navBtn.classList.toggle("active")
     body.classList.toggle("primary_menu_open")
@@ -13,12 +15,13 @@ siteheader.addEventListener("click", () => {
 })
 
 // close nav on swipe left
-document.addEventListener('swiped-left', function(e) {
+siteheader.addEventListener('swiped-left', function (e) {
     navBtn.classList.remove("active")
     body.classList.remove("primary_menu_open")
+
 });
 // open nav on swipe right
-document.addEventListener('swiped-right', function(e) {
+siteheader.addEventListener('swiped-right', function (e) {
     navBtn.classList.add("active")
     body.classList.add("primary_menu_open")
 });
@@ -30,6 +33,9 @@ function stopProp(element) {
 };
 stopProp(navBtn)
 stopProp(primaryMenu)
+
+
+
 
 
 // swiper
