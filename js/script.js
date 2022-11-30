@@ -20,7 +20,7 @@ function stopProp(element) {
 stopProp(navBtn)
 stopProp(primaryMenu)
 
-// import Swiper from "swiper";
+
 // swiper
 var swiper = new Swiper(".testimonial_swiper", {
     navigation: {
